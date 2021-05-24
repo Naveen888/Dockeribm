@@ -22,6 +22,9 @@ where is my image stored
    How to install nginx image with custom name
    37  docker run --publish 81:80 --detach --name webhost nginx
    38  docker ps
+How to check the log of a container
+40  docker ps
+   41  docker container logs webhost
 
 
 
