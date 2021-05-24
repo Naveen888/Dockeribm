@@ -25,6 +25,17 @@ where is my image stored
 How to check the log of a container
 40  docker ps
    41  docker container logs webhost
+   
+   How to delete and stop a container
+    46  docker ps
+   47  docker container rm c311
+   48  docker container rm c311 3ac6
+   49  docker container stop c31
+   50  docker ps -a
+   51  docker rm c31
+
+   53  docker ps -a
+
 
 
 
