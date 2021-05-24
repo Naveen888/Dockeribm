@@ -80,6 +80,12 @@ Docker networking
   116  docker container exec -it proxy ping my_nginx
   117  docker container exec -it my_nginx ping proxy
 
+docker storage
+140  docker container run -d --name db -e MYSQL_ALLOW_EMPTY_PASSWORD=true -v mysql-db:/var/lib/mysql mysql
+  141  docker volume ls
+  142  docker ps
+  143  docker volume ls
+  144  history
 
 
 
