@@ -48,6 +48,16 @@ container running as process
    67  docker ps -a
    68  docker start 3ac
    69  docker top 3ac
+   
+   What is there inside your container
+   72  docker container run -d --name mysql -e MYSQL_RANDOM_ROOT_PASSWORD=true mysql
+   73  docker ps
+   74  docker top mysql
+   75  docker container inspect mysql
+   76  cd /var/lib/docker/volumes/7d9afaa7b4adce8d6a6c6b7fa6d3dc235b1afb8ba9fdc49ba4f6e122a386b398
+   77  ls
+   78  cd _data
+
 
 
 
