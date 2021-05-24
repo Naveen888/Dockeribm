@@ -18,5 +18,10 @@
 where is my image stored
  26  docker inspect image f3cffeea581b
    27  cd /var/lib/docker/overlay2/
+   
+   How to install nginx image with custom name
+   37  docker run --publish 81:80 --detach --name webhost nginx
+   38  docker ps
+
 
 
