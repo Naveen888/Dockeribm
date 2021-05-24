@@ -15,5 +15,8 @@
    20  docker ps
 
    22  docker images
+where is my image stored
+ 26  docker inspect image f3cffeea581b
+   27  cd /var/lib/docker/overlay2/
 
 
