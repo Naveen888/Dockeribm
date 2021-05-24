@@ -57,6 +57,12 @@ container running as process
    76  cd /var/lib/docker/volumes/7d9afaa7b4adce8d6a6c6b7fa6d3dc235b1afb8ba9fdc49ba4f6e122a386b398
    77  ls
    78  cd _data
+   
+   How to login inside a container
+   81  docker ps
+   82  docker container log b028
+   84  docker container exec -it b028 bash
+
 
 
 
