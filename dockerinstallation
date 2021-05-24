@@ -36,6 +36,18 @@ How to check the log of a container
 
    53  docker ps -a
 
+container running as process
+ 59  docker ps
+   60  docker top 3ac
+   61  ps aux
+   62  docker ps
+   63  docker top 3ac
+   64  kill -9 11654
+   65  kill -9 1163
+   66  docker ps
+   67  docker ps -a
+   68  docker start 3ac
+   69  docker top 3ac
 
 
 
