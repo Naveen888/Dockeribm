@@ -5,3 +5,8 @@
     4  systemctl start docker
     5  systemctl enable docker
     6  systemctl status docker
+    
+    Run our first container
+    11  docker container run --publish 80:80 --detach httpd
+   12  docker ps
+
