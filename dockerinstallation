@@ -91,3 +91,10 @@ how to reattach an storage
  149  docker rm 17be --force
   150  docker volume ls
   151  docker container run -d --name db1 -e MYSQL_ALLOW_EMPTY_PASSWORD=true -v mysql-db:/var/lib/mysql mysql
+
+How to add a new volume
+155  mkfs -t ext4 /dev/xvdf
+  156  mkdir /new/
+  157  lsblk
+
+  159  mount /dev/xvdf /new/
