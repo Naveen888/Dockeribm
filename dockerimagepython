@@ -25,4 +25,9 @@ EXPOSE 5001
 ENTRYPOINT ['python']
 CMD ["demo.py"]
 
+How to build the custom image
+ 264  docker build -t gopal1409/pythonapp:v1 .
+  265  docker images
+
+
 
