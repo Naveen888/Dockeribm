@@ -32,7 +32,7 @@ Main-Class: HelloWorld
   How to convert the application into an containe rbased image
   vi dockerfile
   
-FROM: java:8
+FROM java:8
 WORKDIR /
 ADD HelloWorld.jar HelloWorld.jar
 EXPOSE 8080
