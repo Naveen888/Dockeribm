@@ -19,4 +19,13 @@ compile the application
   225  ls
   226  java HelloWorld
 
+How to convert the application into a jar file
+vi manifest.txt
+
+Manifest-Version: 1.0
+Created-By: Me
+Main-Class: HelloWorld
+
+236  jar cfm HelloWorld.jar manifest.txt HelloWorld.class
+  237  java -jar HelloWorld.jar
 
