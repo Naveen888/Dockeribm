@@ -44,3 +44,12 @@ docker build -t myjavaapp:v1 .
 
 to check the image
 docker images
+
+How to push an image to hub.docker.com
+first do docker login
+233  docker images
+  234  docker tag
+  235  docker tag aa818f3d96af gopal1409/myjavaapp:v1
+  236  docker images
+  237  docker push gopal1409/myjavaapp:v1
+
