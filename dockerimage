@@ -40,3 +40,7 @@ CMD java -jar HelloWorld.jar
 
 to build an container based image using docker file
 docker build -t myjavaapp:v1 .
+
+
+to check the image
+docker images
