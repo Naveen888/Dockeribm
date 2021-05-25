@@ -9,4 +9,20 @@ def hello():
   return "Welcome to the flask app"
 if __name__=="__main__":
   app.run(host = '0.0.0.0',port = 5001, debug = True)
+  
+  create an requirement.txt file
+  
+  252  vi requirements.txt
+flask
+
+vi dockerfile
+
+FROM python:alpine3.7
+COPY . /app
+WORKDIR /app
+RUN pip install -r requirements.txt
+EXPOSE 5001
+ENTRYPOINT ['python']
+CMD ["demo.py"]
+
 
