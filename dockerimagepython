@@ -1,1 +1,12 @@
+python flas app
+242  mkdir pythonproject
+  243  cd pythonproject/
+  244  vi demo.py
+from flask import flask
+app = Flask(__name__)
+@app.route('/')
+def hello():
+  return "Welcome to the flask app"
+if __name__=="__main__":
+  app.run(host = '0.0.0.0',port = 5001, debug = True)
 
