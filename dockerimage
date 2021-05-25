@@ -52,4 +52,15 @@ first do docker login
   235  docker tag aa818f3d96af gopal1409/myjavaapp:v1
   236  docker images
   237  docker push gopal1409/myjavaapp:v1
+  
+  Creating a CI/CD pipeline using hu.dcoker.com
+   242  vi HelloWorld.java
+  243  javac HelloWorld.java
+  244  java HelloWorld
+  245  jar cfm HelloWorld.jar manifest.txt HelloWorld.class
+  246  git init
+  247  git add .
+  248  git commit -m "my first java application"
+  249  git log
+
 
