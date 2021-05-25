@@ -1,3 +1,22 @@
  217  yum install java-1.8.0-openjdk
   218  yum install java-1.8.0-openjdk-devel
   219  yum install git
+  
+  How to create a simple java app
+  221  mkdir javaproject
+  222  cd javaproject/
+  223  vi HelloWorld.java
+
+public class HelloWorld{
+  public static void main(String[] args){
+   System.out.println("Hello fron docker container");
+}
+}
+
+------
+compile the application
+224  javac HelloWorld.java
+  225  ls
+  226  java HelloWorld
+
+
