@@ -38,4 +38,5 @@ ADD HelloWorld.jar HelloWorld.jar
 EXPOSE 8080
 CMD java -jar HelloWorld.jar
 
-
+to build an container based image using docker file
+docker build -t myjavaapp:v1 .
