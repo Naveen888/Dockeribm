@@ -28,4 +28,14 @@ Main-Class: HelloWorld
 
 236  jar cfm HelloWorld.jar manifest.txt HelloWorld.class
   237  java -jar HelloWorld.jar
+  
+  How to convert the application into an containe rbased image
+  vi dockerfile
+  
+FROM: java:8
+WORKDIR /
+ADD HelloWorld.jar HelloWorld.jar
+EXPOSE 8080
+CMD java -jar HelloWorld.jar
+
 
