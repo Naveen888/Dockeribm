@@ -32,6 +32,13 @@
   488  kubectl describe deploy
   489  history
   490  kubectl get pod -o wide
+  
+  Rollback to previous release
+  495  kubectl set image deployment/myapp3-deployment myapp3-container=nginx --record
+  496  kubectl rollout history deployment/myapp3-deployment
+  497  kubectl rollout undo deployment/myapp3-deployment --to-revision=2
+  498  history
+
 
 
 
