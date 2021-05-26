@@ -15,4 +15,13 @@
   469  kubectl describe rs myapp3-deployment-656889595c
   470  kubectl get pod
   471  kubectl describe pod myapp3-deployment-656889595c-2d6wr
+  
+  expose deployment using service
+   476  kubectl expose deploy myapp3-deployment --type=NodePort --port=80
+  477  kubectl get svc
+  478  history
+  479  kubectl get pod -o wide
+  480  kubectl get svc
+  481  kubectl describe svc myapp3-deployment
+
 
