@@ -42,6 +42,37 @@
   autoscaling in kubernetes
     500  kubectl autoscale deployment/myapp3-deployment --min=5 --max=10 --cpu-percent=80
   501  kubectl get hpa
+  
+  Kubernetes Dashboard
+  
+   505  kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.2.0/aio/deploy/recommended.yaml
+  506  cat <<EOF | kubectl apply -f -
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: admin-user
+  namespace: kubernetes-dashboard
+EOF
+
+  507  cat <<EOF | kubectl apply -f -
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: admin-user
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+- kind: ServiceAccount
+  name: admin-user
+  namespace: kubernetes-dashboard
+EOF
+
+  508  kubectl get pod --all-namespaces
+  511  kubectl edit svc kubernetes-dashboard --namespace=kubernetes-dashboard
+  512  kubectl get svc --all-namespaces
+
 
 
 
