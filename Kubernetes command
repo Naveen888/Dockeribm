@@ -35,6 +35,12 @@
     437  kubectl get pod my-first-pod -o yaml
 
 
+How to delete kubernetes
+439  kubectl get pod
+  440  kubectl delete pod my-first-pod
+  441  kubectl get svc
+  443  kubectl delete svc my-first-service
+  445  kubectl get all
 
 
 
