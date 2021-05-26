@@ -19,6 +19,15 @@
   How to login inside an pod
    425  kubectl get pod
   426  kubectl exec -it my-first-pod -- /bin/bash
+  
+  
+  outside pod how to access
+  428  kubectl exec -it my-first-pod -- /bin/bash
+  429  kubectl exec -it my-first-pod -- env
+
+  431  kubectl exec -it my-first-pod -- ls
+  432  kubectl exec -it my-first-pod -- cat /usr/share/nginx/html/index.html
+
 
 
 
