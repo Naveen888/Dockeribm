@@ -27,6 +27,14 @@
 
   431  kubectl exec -it my-first-pod -- ls
   432  kubectl exec -it my-first-pod -- cat /usr/share/nginx/html/index.html
+  
+  kubernetes everything run as yaml
+  434  kubectl edit pod my-first-pod
+  435  kubectl edit svc my-first-service
+  437  kubectl get svc my-first-service -o yaml
+    437  kubectl get pod my-first-pod -o yaml
+
+
 
 
 
