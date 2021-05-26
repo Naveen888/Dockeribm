@@ -2,3 +2,12 @@
   401  kubectl get pod
   402  kubectl get pod -o wide
   403  kubectl describe pod my-first-pod
+  
+  How to expose a service outside kubernetes cluster
+  412  kubectl get service
+  413  kubectl get svc
+  414  kubectl get pod
+
+  416  kubectl expose pod my-first-pod --type=NodePort --port=80 --name=my-first-service
+  417  kubectl get svc
+
