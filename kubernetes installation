@@ -1,0 +1,24 @@
+worker nodes installation
+root@ip-172-31-4-221 ~]# history
+    1  yum install -y yum-utils
+    2  yum-config-manager     --add-repo     https://download.docker.com/linux/centos/docker-ce.repo
+    3  yum install containerd.io
+    4  cat <<EOF | sudo tee /etc/modules-load.d/containerd.conf
+overlay
+br_netfilter
+EOF
+
+    5  modprobe overlay
+    6  modprobe br_netfilter
+    7  cat <<EOF | sudo tee /etc/sysctl.d/99-kubernetes-cri.conf
+net.bridge.bridge-nf-call-iptables  = 1
+net.ipv4.ip_forward                 = 1
+net.bridge.bridge-nf-call-ip6tables = 1
+EOF
+
+    8  sysctl --system
+    9  mkdir -p /etc/containerd
+   10  containerd config default | sudo tee /etc/containerd/config.toml
+   11  systemctl restart containerd
+   12  systemctl status containerd
+   13  history
