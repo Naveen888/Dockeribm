@@ -38,6 +38,11 @@
   496  kubectl rollout history deployment/myapp3-deployment
   497  kubectl rollout undo deployment/myapp3-deployment --to-revision=2
   498  history
+  
+  autoscaling in kubernetes
+    500  kubectl autoscale deployment/myapp3-deployment --min=5 --max=10 --cpu-percent=80
+  501  kubectl get hpa
+
 
 
 
