@@ -23,5 +23,15 @@
   479  kubectl get pod -o wide
   480  kubectl get svc
   481  kubectl describe svc myapp3-deployment
+  
+  Update current image
+   484  kubectl set image deployment/myapp3-deployment myapp3-container=piuma/phpsysinfo --record
+  485  kubectl get deploy
+  486  kubectl get rs
+  487  kubectl get pod
+  488  kubectl describe deploy
+  489  history
+  490  kubectl get pod -o wide
+
 
 
