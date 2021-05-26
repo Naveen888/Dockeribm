@@ -3,3 +3,16 @@
   454  cd ibmmaykubmanifest/
   455  ls
   456  kubectl apply -f myfirstdeployment.yml
+  
+  kubernets deployment mapping
+   462  clear
+  463  kubectl get deploy
+  464  kubectl get rs
+  465  kubectl get pod
+  466  kubectl get deploy
+  467  kubectl describe deploy myapp3-deployment
+  468  kubectl get rs
+  469  kubectl describe rs myapp3-deployment-656889595c
+  470  kubectl get pod
+  471  kubectl describe pod myapp3-deployment-656889595c-2d6wr
+
