@@ -10,4 +10,10 @@
 
   416  kubectl expose pod my-first-pod --type=NodePort --port=80 --name=my-first-service
   417  kubectl get svc
+  
+  Service Mapping with Pod
+  420  kubectl get pod -o wide
+  421  kubectl get svc
+  422  kubectl describe svc my-first-service
+
 
