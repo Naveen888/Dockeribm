@@ -22,7 +22,7 @@
   
   
   outside pod how to access
-  428  kubectl exec -it my-first-pod -- /bin/bash
+  
   429  kubectl exec -it my-first-pod -- env
 
   431  kubectl exec -it my-first-pod -- ls
