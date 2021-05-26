@@ -15,5 +15,10 @@
   420  kubectl get pod -o wide
   421  kubectl get svc
   422  kubectl describe svc my-first-service
+  
+  How to login inside an pod
+   425  kubectl get pod
+  426  kubectl exec -it my-first-pod -- /bin/bash
+
 
 
