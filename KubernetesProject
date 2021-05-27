@@ -5,3 +5,11 @@ creating a volume and mapping the same to our cluster.
   571  kubectl apply -f pv.yml
   572  kubectl get pv
   573  kubectl describe pv
+  
+  How to create pvc
+   576  git pull
+  577  ls
+  578  kubectl apply -f pvc.yml
+  579  kubectl get pv
+  580  kubectl get pvc
+
