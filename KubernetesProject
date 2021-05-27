@@ -26,5 +26,12 @@ configmap deployment
   599  kubectl get pod
   600  kubectl exec -it mysql-f95d5d9b6-svdml -- /bin/bash
   601  history
+  
+  MYSQL service with Pod Ip
+   605  git pull
+  606  kubectl apply -f mysqlservice.yml
+  607  kubectl get svc
+  608  kubectl describe svc mysql
+
 
 
