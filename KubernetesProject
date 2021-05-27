@@ -32,6 +32,12 @@ configmap deployment
   606  kubectl apply -f mysqlservice.yml
   607  kubectl get svc
   608  kubectl describe svc mysql
+  
+  expose the deployment
+  620  kubectl expose deploy usermgmt-webapp --type=NodePort --port=8080
+  
+  622  kubectl get svc
+
 
 Front End Deployment
  613  git pull
