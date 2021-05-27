@@ -18,4 +18,13 @@ configmap deployment
   586  kubectl apply -f mysqlconfigmap.yml
   587  kubectl get configmap
   588  kubectl describe configmap usermanagement-dbcreation-script
+  
+  MYSQL Deployment
+   596  git pull
+  597  kubectl apply -f mysql.yml
+  598  kubectl get deploy
+  599  kubectl get pod
+  600  kubectl exec -it mysql-f95d5d9b6-svdml -- /bin/bash
+  601  history
+
 
