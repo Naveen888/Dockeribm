@@ -32,7 +32,12 @@ configmap deployment
   606  kubectl apply -f mysqlservice.yml
   607  kubectl get svc
   608  kubectl describe svc mysql
-  
+
+How to add helm chart
+859  helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+860 helm search repo prometheus-community
+
+
   expose the deployment
   620  kubectl expose deploy usermgmt-webapp --type=NodePort --port=8080
   
