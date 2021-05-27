@@ -31,7 +31,12 @@ configmap deployment
    605  git pull
   606  kubectl apply -f mysqlservice.yml
   607  kubectl get svc
+  
+  How to expose Promothus Dashoard
   608  kubectl describe svc mysql
+ 882  kubectl get svc
+  883  kubectl edit svc prometheus-operator-162210-prometheus
+  884  kubectl get svc
 
 How to add helm chart
 859  helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
@@ -86,6 +91,11 @@ How to install helm package manager
   859  helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
   helm install --generate-name prometheus-community/prometheus-operator
 
+How to expose Promothus Dashoard
+  608  kubectl describe svc mysql
+ 882  kubectl get svc
+  883  kubectl edit svc prometheus-operator-162210-prometheus
+  884  kubectl get svc
 
 
 
