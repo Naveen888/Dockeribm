@@ -33,5 +33,13 @@ configmap deployment
   607  kubectl get svc
   608  kubectl describe svc mysql
 
+Front End Deployment
+ 613  git pull
+  614  kubectl apply -f frontend.yml
+  615  kubectl get deploy
+  616  kubectl get pod
+  617  kubectl describe pod usermgmt-webapp-9b8948678-rlxs9
+  618  history
+
 
 
