@@ -61,6 +61,14 @@ How to create a secret in kubernetes
   827  kubectl describe secret mysql-db-password
   828  kubectl get deploy
   829  kubectl delete deploy mysql
+  
+  How to attach secret to your kubernetes deployment
+   832  git pull
+  
+  834  kubectl apply -f mysql.yml
+  835  kubectl get pod
+  836  kubectl describe pod mysql-7d5f8dcbdb-qrjzx
+
 
 
 
