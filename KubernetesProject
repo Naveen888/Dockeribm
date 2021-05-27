@@ -46,6 +46,12 @@ Front End Deployment
   616  kubectl get pod
   617  kubectl describe pod usermgmt-webapp-9b8948678-rlxs9
   618  history
+  
+  Expose the deployment
+  expose the deployment
+  620  kubectl expose deploy usermgmt-webapp --type=NodePort --port=8080
+  
+  622  kubectl get svc
 
 
 
