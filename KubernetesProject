@@ -1,0 +1,7 @@
+creating a volume and mapping the same to our cluster. 
+ 568  cd ibmmaykubmanifest/
+  569  git pull
+  570  ls
+  571  kubectl apply -f pv.yml
+  572  kubectl get pv
+  573  kubectl describe pv
