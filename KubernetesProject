@@ -13,3 +13,9 @@ creating a volume and mapping the same to our cluster.
   579  kubectl get pv
   580  kubectl get pvc
 
+configmap deployment
+ 585  git pull
+  586  kubectl apply -f mysqlconfigmap.yml
+  587  kubectl get configmap
+  588  kubectl describe configmap usermanagement-dbcreation-script
+
