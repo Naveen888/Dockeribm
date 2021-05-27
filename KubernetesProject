@@ -69,6 +69,14 @@ How to create a secret in kubernetes
   835  kubectl get pod
   836  kubectl describe pod mysql-7d5f8dcbdb-qrjzx
 
+How to install helm package manager
+
+ 843  yum install wget
+  844  wget https://get.helm.sh/helm-v3.6.0-rc.1-linux-amd64.tar.gz
+  845  tar -zxvf helm-v3.6.0-rc.1-linux-amd64.tar.gz
+851  mv linux-amd64/helm /usr/bin/
+  852  helm
+
 
 
 
