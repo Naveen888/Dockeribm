@@ -82,6 +82,8 @@ How to install helm package manager
 851  mv linux-amd64/helm /usr/bin/
   852  helm
   installing promothus operator
+  first add repo
+  859  helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
   helm install --generate-name prometheus-community/prometheus-operator
 
 
