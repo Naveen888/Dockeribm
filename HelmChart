@@ -70,3 +70,6 @@ install mysql and mysql service with helm
 install the fronend
 1026  git pull
  1027  helm upgrade myapp .
+ 
+How to set a value in helm
+ helm upgrade myapp . --set replicasCount=2
