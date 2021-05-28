@@ -12,4 +12,10 @@ description: this is my nginx helm chart
 create our first deployment inside template folder
 mkdir templates
  913  kubectl run deployment --image=nginx --dry-run=client -o yaml > ./templates/deployment.yaml
+ 
+ how to install your first helm char
+ 919  helm install my-nginx .
+  920  helm list
+  921  history
+
 
