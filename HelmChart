@@ -56,3 +56,9 @@ git pull
 
 How to import an existing resource inside helm chart
  kubectl annotate deploy,configmap -o name %meta.helm.sh/release-name=$MYAPP
+
+How to upgrade helm chart
+ 1013  git pull
+ 1014  helm list
+ 1015  helm upgrade myapp .
+ 1016  helm list
