@@ -1,1 +1,10 @@
-
+894  mkdir charts
+  895  cd charts/
+  896  mkdir my-nginx
+  897  cd my-nginx/
+  898  vi Chart.yaml
+  apiVersion: v1
+name: my-nginx
+version: 1.0.0
+appVersion: 1.0
+description: this is my nginx helm chart
