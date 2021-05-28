@@ -1,0 +1,4 @@
+k8sadmin with kubernetes
+1064  crictl ps
+ 1065  crictl pods
+1067  crictl pull nginx
