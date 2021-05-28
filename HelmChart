@@ -17,5 +17,22 @@ mkdir templates
  919  helm install my-nginx .
   920  helm list
   921  history
+  
+  Helm Rollback feature
+   923  vi Chart.yaml
+apiVersion: v1
+name: my-nginx
+version: 1.2.0
+appVersion: 1.0
+description: this is my nginx helm chart
+
+  925  kubectl expose pod deployment --port 80 --dry-run -o yaml > templates/service.yaml
+  926  tree
+  927  cat templates/service.yaml
+  928  helm upgrade my-nginx .
+  929  helm list
+  930  helm rollback my-nginx 1
+  931  helm rollback my-nginx 2
+
 
 
