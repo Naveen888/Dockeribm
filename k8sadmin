@@ -2,3 +2,9 @@ k8sadmin with kubernetes
 1064  crictl ps
  1065  crictl pods
 1067  crictl pull nginx
+
+How to work with gvisor
+1086  cd myapp
+1081  kubectl apply -f runtimeclass.yml
+1083  kubectl get runtimeclass
+
