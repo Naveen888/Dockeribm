@@ -48,4 +48,6 @@ description: this is my nginx helm chart
   971  kubectl delete secret mysql-db-password
 
 
-
+Project COnversion to Helm Chart
+git pull
+helm install myapp .
