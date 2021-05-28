@@ -50,4 +50,7 @@ description: this is my nginx helm chart
 
 Project COnversion to Helm Chart
 git pull
-helm install myapp .
+ 1004  cd myapp/
+ 1005  helm install myapp .
+
+
