@@ -54,3 +54,5 @@ git pull
  1005  helm install myapp .
 
 
+How to import an existing resource inside helm chart
+ kubectl annotate deploy,configmap -o name %meta.helm.sh/release-name=$MYAPP
