@@ -33,6 +33,19 @@ description: this is my nginx helm chart
   929  helm list
   930  helm rollback my-nginx 1
   931  helm rollback my-nginx 2
+  delete the prvious setup
+  kubectl delete deploy mysql
+  kubectl delete deploy usermgmt-webapp
+  kubectl delete svc mysql
+  kubectl delete usermgmt-webapp
+  963  kubectl get pvc
+  964  kubectl delete pvc task-pv-clam
+   960  kubectl get pv
+  961  kubectl delete pv task-pv-volume
+   968  kubectl get configmap
+  969  kubectl delete configmap usermanagement-dbcreation-script
+  970  kubectl get secret
+  971  kubectl delete secret mysql-db-password
 
 
 
