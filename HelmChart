@@ -66,3 +66,7 @@ How to upgrade helm chart
 install mysql and mysql service with helm
  1022  git pull
   1024  helm upgrade  myapp .
+
+install the fronend
+1026  git pull
+ 1027  helm upgrade myapp .
