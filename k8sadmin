@@ -18,6 +18,10 @@ How to apply the gvisor class
  1101  kubectl get pod
  1102  kubectl descirbe pod gvisor
  1103  kubectl describe pod gvisor
+ 
+ Install gvisor in worker node
+  97  yum install wget
+   98  bash <(curl -s https://raw.githubusercontent.com/killer-sh/cks-course-environment/master/course-content/microservice-vulnerabilities/container-runtimes/gvisor/install_gvisor.sh)
 
 
 
