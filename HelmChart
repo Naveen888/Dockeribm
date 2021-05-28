@@ -76,5 +76,11 @@ How to set a value in helm
  1051  helm upgrade myapp . --set replicaCount=2
  1052  helm inspect values .
 
+Helm service varaible
+ 1058  git pull
+ 1059  helm upgrade myapp . --set service.type=LoadBalancer
+ 1060  helm upgrade myapp . --set service.type=NodePort
+ 1061  history
+
 
 
