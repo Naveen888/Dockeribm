@@ -72,4 +72,9 @@ install the fronend
  1027  helm upgrade myapp .
  
 How to set a value in helm
- helm upgrade myapp . --set replicasCount=2
+ 1050  git pull
+ 1051  helm upgrade myapp . --set replicaCount=2
+ 1052  helm inspect values .
+
+
+
