@@ -62,3 +62,7 @@ How to upgrade helm chart
  1014  helm list
  1015  helm upgrade myapp .
  1016  helm list
+
+install mysql and mysql service with helm
+ 1022  git pull
+  1024  helm upgrade  myapp .
