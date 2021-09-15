@@ -8,4 +8,10 @@ node {
      stage('Build Docker Image'){
         sh 'docker build -t gopal1409/myapp:1.2.0 .'
     }
+    stage('Docker Push to Hub'){
+        withCredentials([string(credentialsId: 'secrethub', variable: 'dockerhubpwd')]) {
+       sh 'docker login -u gopal1409 -p ${dockerhubpwd}'
+     }
+        sh 'docker push gopal1409/myapp:1.2.0'
+    }
 }
